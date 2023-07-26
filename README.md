@@ -1,4 +1,19 @@
+# Machine learning project 
+For handwritten digit recognition using the MNIST dataset. The project is implemented with TensorFlow and Keras, two popular libraries for building and training neural networks. Here's an explanation of the project:
 
+1. **Data Loading and Preprocessing:** The code loads the MNIST dataset, which contains images of handwritten digits (0 to 9). The data is split into training and testing sets, and then normalized to scale the pixel values between 0 and 1.
+
+2. **Neural Network Model:** The model architecture is defined as a sequential neural network. It consists of three layers - two dense layers with ReLU activation functions and one dense output layer with a softmax activation function. The first and second dense layers have 128 units each.
+
+3. **Model Compilation:** The model is compiled with the Adam optimizer, sparse categorical cross-entropy loss function, and accuracy as the metric.
+
+4. **Model Training:** The model is trained using the training data (x_train and y_train) for three epochs.
+
+5. **Model Evaluation:** After training, the model's performance is evaluated on the test data (x_test and y_test). The evaluation results, including the loss and accuracy, are printed.
+
+6. **Digit Recognition:** For demonstration purposes, the script reads and predicts handwritten digits from four images (named "1.png", "2.png", etc.). The images are loaded using OpenCV, preprocessed, and then fed into the trained model for prediction. The predicted digit and the corresponding image are displayed using Matplotlib.
+
+Overall, this project showcases the implementation of a simple neural network for recognizing handwritten digits and demonstrates how to train and evaluate the model using the MNIST dataset. The code also provides an example of using the trained model to predict digits from custom images.
 # Handwritten digit recognition (HDR)
 
 Handwritten digit recognition (HDR) is considered one of trivial and critical machine learning problems. It has been used widely by researchers as experiments for theories of machine learning algorithms for many years. In recent years, neural networks and conventional neural network currently provide the best solutions to many problems in handwritten digit recognition.
